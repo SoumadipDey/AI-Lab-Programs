@@ -13,3 +13,10 @@ The following programs have been implemented till now:
 3. Fuzzy Logic Based Resturant Rating System - Based on Service Quality, Food Quality and Ambience
 
 ## For MCA25
+The following programs have been implemented till now:
+> Search Methods
+1. DFS & BFS
+2. DLS & IDS
+3. UCS
+> Fuzzy Logic
+1. Basic Fuzzy Operations - Union, Intersection, Complement, Algebraic Sum, Algebraic Product, Cartesian Product
