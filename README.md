@@ -1,6 +1,7 @@
-# AI-Lab-Programs-BCA57203-BCA23
+# AI-Lab-Programs
 All AI Lab Programs for BCA23 Batch
 
+## For BCA23
 The following programs have been implemented till now:
 > Search Methods
 1. DFS & BFS
@@ -11,3 +12,4 @@ The following programs have been implemented till now:
 2. Fuzzy Logic Based Temperature Controller - Based on Target Temp and Current Temp
 3. Fuzzy Logic Based Resturant Rating System - Based on Service Quality, Food Quality and Ambience
 
+## For MCA25
