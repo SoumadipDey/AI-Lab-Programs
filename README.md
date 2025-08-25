@@ -1,5 +1,5 @@
 # AI-Lab-Programs
-All AI Lab Programs for BCA23 Batch
+All AI Lab Programs
 
 ## For BCA23
 The following programs have been implemented till now:
