@@ -55,7 +55,7 @@ cough_status = int(input("1) Cough 0) No Cough :"))
 lowO2_status = int(input("1) Low Oxygen 0) No Low Oxygen :"))
 
 input_sample = {"Fever": fever_status, "Cough": cough_status, "Low_Oxygen": lowO2_status}
-print("Posterior P(COVID=1):", predictCovidYES(input_sample,df))
+print(f"Posterior P(COVID=1): {round(predictCovidYES(input_sample,df),4)*100}%")
 
 if(predictCovidYES(input_sample,df) >= 0.5):
   print("It is likely this person has COVID!")
