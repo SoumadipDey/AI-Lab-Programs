@@ -50,9 +50,9 @@ def predictCovidYES(sample:dict, df:pd.DataFrame) -> float:
   return (P_X_COVID_YES*P_COVID_YES)/P_X_ALL_CLASSES
 
 # Driver Code
-fever_status = int(input("1) Fever 0) No Fever"))
-cough_status = int(input("1) Cough 0) No Cough"))
-lowO2_status = int(input("1) Low Oxygen 0) No Low Oxygen"))
+fever_status = int(input("1) Fever 0) No Fever :"))
+cough_status = int(input("1) Cough 0) No Cough :"))
+lowO2_status = int(input("1) Low Oxygen 0) No Low Oxygen :"))
 
 input_sample = {"Fever": fever_status, "Cough": cough_status, "Low_Oxygen": lowO2_status}
 print("Posterior P(COVID=1):", predictCovidYES(input_sample,df))
