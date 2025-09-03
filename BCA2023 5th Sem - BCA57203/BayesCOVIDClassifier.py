@@ -1,5 +1,4 @@
 import pandas as pd
-
 database = [
     {"Fever": 1, "Cough": 1, "Low_Oxygen": 1, "COVID": 1},
     {"Fever": 0, "Cough": 1, "Low_Oxygen": 0, "COVID": 0},
@@ -19,11 +18,9 @@ database = [
 ]
 
 df = pd.DataFrame(database)
-print("Our previously saved database of events")
-print(df)
 
 # Calculating probablity of each individual features
-# Here y is the dependent event and X is the independent event
+# Here Y is the dependent event and X is the independent event
 def calcConditionalProbablity(Y_set:pd.DataFrame, X:str, valueX:int):
   return Y_set[X].value_counts()[valueX]/len(Y_set)
 
@@ -53,11 +50,14 @@ def predictCovidYES(sample:dict, df:pd.DataFrame) -> float:
   return (P_X_COVID_YES*P_COVID_YES)/P_X_ALL_CLASSES
 
 # Driver Code
-test_sample = {"Fever": 1, "Cough": 1, "Low_Oxygen": 1}
-print("\nTest sample:", test_sample)
-print("Posterior P(COVID=1):", predictCovidYES(test_sample,df))
+fever_status = int(input("1) Fever 0) No Fever"))
+cough_status = int(input("1) Cough 0) No Cough"))
+lowO2_status = int(input("1) Low Oxygen 0) No Low Oxygen"))
 
-if(predictCovidYES(test_sample,df)>=0.5):
-  print("It is very likely this person has COVID!")
+input_sample = {"Fever": fever_status, "Cough": cough_status, "Low_Oxygen": lowO2_status}
+print("Posterior P(COVID=1):", predictCovidYES(input_sample,df))
+
+if(predictCovidYES(input_sample,df) >= 0.5):
+  print("It is likely this person has COVID!")
 else:
   print("It is likely this person does not have COVID!")
