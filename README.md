@@ -14,6 +14,7 @@ The following programs have been implemented till now:
 3. Fuzzy Logic Based Resturant Rating System - Based on Service Quality, Food Quality and Ambience
 > Bayesian Methods
 1. Simple Bayes' Theorem Based COVID probablity prediction
+2. SkLearn Based Naive Bayes implementation on a dataset with Mixed type of features (categorical and numerical)
 
 ## For MCA25
 The following programs have been implemented till now:
