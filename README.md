@@ -25,3 +25,5 @@ The following programs have been implemented till now:
 4. A Star
 > Fuzzy Logic
 1. Basic Fuzzy Operations - Union, Intersection, Complement, Algebraic Sum, Algebraic Product, Cartesian Product
+> Bayesian Methods
+2. SkLearn Based Naive Bayes implementation on a dataset with Mixed type of features (categorical and numerical)
