@@ -15,6 +15,8 @@ The following programs have been implemented till now:
 > Bayesian Methods
 1. Simple Bayes' Theorem Based COVID probablity prediction
 2. SkLearn Based Naive Bayes implementation on a dataset with Mixed type of features (categorical and numerical)
+> 2 Player Game Playing Algorithms
+1. Tic-Tac-Toe using the Minimax Algorithm 
 
 ## For MCA25
 The following programs have been implemented till now:
