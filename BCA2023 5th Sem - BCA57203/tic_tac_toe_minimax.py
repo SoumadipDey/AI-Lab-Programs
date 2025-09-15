@@ -2,6 +2,7 @@
 class TicTacToe:
     def __init__(self, player):
         self.player = player
+        self.nodes = 0
         self.computer = "O" if player == "X" else "X"
         self.board = [[" " for _ in range(3)] for _ in range(3)]
 
@@ -45,6 +46,7 @@ class TicTacToe:
         return True
 
     def minimax(self, player_type:str):
+        self.nodes += 1
         # Check Base Case --> leaf (somebody has won or draw)
         score = self.evaluate()
         if score !=0: # Someone has won
@@ -127,10 +129,12 @@ def playGame():
         if game.checkWinner(game.player):
             game.printBoard()
             print("Player wins!")
+            print(f"Number of Nodes Explored: {game.nodes}")
             break
         if game.isFull():
             game.printBoard()
             print("It's a draw!")
+            print(f"Number of Nodes Explored: {game.nodes}")
             break
 
         # Computer's move
@@ -140,9 +144,11 @@ def playGame():
         game.printBoard()
         if game.checkWinner(game.computer):
             print("Computer wins!")
+            print(f"Number of Nodes Explored: {game.nodes}")
             break
         if game.isFull():
             print("It's a draw!")
+            print(f"Number of Nodes Explored: {game.nodes}")
             break
 
 
