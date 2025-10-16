@@ -45,6 +45,13 @@ def fuzzyAlgebraicSum(setA:dict, setB:dict):
             setA.get(mem,0.0) * setB.get(mem,0.0),2)
     return setAplusB
 
+def fuzzyBoundedSum(setA:dict, setB:dict):
+    setAplusB = {}
+    all_members = set(setA.keys()).union(setB.keys())
+    for mem in all_members:
+        setAplusB[mem] = min(1.0, round(setA.get(mem,0.0) + setB.get(mem,0.0))) 
+    return setAplusB
+
 def fuzzyAlgebraicProduct(setA:dict, setB:dict):
     setAdotB = {}
     all_members = set(setA.keys()).union(setB.keys())
@@ -65,5 +72,6 @@ print("\nA Intersection B:\n",fuzzyIntersection(setA,setB))
 print("\nA Complement:\n",fuzzyComplement(setA))
 print("\nB Complement:\n",fuzzyComplement(setB))
 print("\nAlgebriac Sum of A & B:\n",fuzzyAlgebraicSum(setA,setB))
+print("\nBounded Sum of A & B:\n",fuzzyBoundedSum(setA,setB))
 print("\nAlgebriac Product of A & B:\n",fuzzyAlgebraicProduct(setA,setB))
 print("\nCartesian Product of Fuzzy Sets A and B: \n",fuzzyCartesianProduct(setA, setB))
