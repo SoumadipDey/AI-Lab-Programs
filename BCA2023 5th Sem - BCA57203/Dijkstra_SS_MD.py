@@ -23,6 +23,7 @@ def dijkstra(graph, start, n_nodes):
                         distances[neighbour] = new_dist
                         parent[neighbour] = curr_node
                         pq.put((new_dist,neighbour))
+    
     return visited, parent, distances
 
 graph = {
