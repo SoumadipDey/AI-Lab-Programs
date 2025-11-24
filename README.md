@@ -36,4 +36,7 @@ The following programs have been implemented till now:
 > Fuzzy Logic
 1. Basic Fuzzy Operations - Union, Intersection, Complement, Algebraic Sum, Algebraic Product, Cartesian Product
 > Bayesian Methods
-2. SkLearn Based Naive Bayes implementation on a dataset with Mixed type of features (categorical and numerical)
+1. SkLearn Based Naive Bayes implementation on a dataset with Mixed type of features (categorical and numerical)
+> Decision Tree
+1. Sklearn Based Decision Tree Classifier - Mental Health Disorders
+2. Sklearn Based Decision Tree Regressor - Metro Interstate Traffic.
