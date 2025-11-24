@@ -33,10 +33,19 @@ The following programs have been implemented till now:
 2. DLS & IDS
 3. UCS
 4. A Star
+
 > Fuzzy Logic
 1. Basic Fuzzy Operations - Union, Intersection, Complement, Algebraic Sum, Algebraic Product, Cartesian Product
+
 > Bayesian Methods
 1. SkLearn Based Naive Bayes implementation on a dataset with Mixed type of features (categorical and numerical)
+
 > Decision Tree
 1. Sklearn Based Decision Tree Classifier - Mental Health Disorders
 2. Sklearn Based Decision Tree Regressor - Metro Interstate Traffic.
+
+> Neural Net
+1. UCI Loan Default on Credit Card - Pytorch MLP
+
+> Simulated Annealing
+1. Finding Global Minima of the function $y = x^2 + 2sin(x)cos(x)$
